@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            background-color: blanchedalmond;
+        }
+        form{
+            background-color: azure;
+            text-align: center;
+            margin:0px 400px 0px 400px
+        }
+        label{
+            display: block;
+            padding: 10px;
+        }
+  
+    </Style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <input type="button" onclick="alert('Welcome to this page')" value="Click Me!">
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" required>
+        <label for="bday">Birthday(Date and time):</label>
+     <input type="datetime-local" id="bday" name="bday" required> 
+     <label for="number">Age:</label>
+     <input type="number" id="number" name="number" min="1" max="50" required>
+     <label for="phn_num">Phone Number:</label>
+     <input type="tel" id="phn_num" name="phn_num" required><br>
+     <label>Languages Known:</label>
+     <input type="checkbox" id="subject1" name=" subject1" value="English">
+     <label for=" subject1">English </label>
+     <input type="checkbox" id=" subject2" name=" subject2" value="Telugu">
+     <label for=" subject2">Telugu</label>
+     <input type="checkbox" id=" subject3" name=" subject3" value="Hindi">
+     <label for=" subject3">Hindi</label>
+     <label for="favcolor">Select your favoritecolor:</label>
+     <input type="color" id="favcolor" name="favcolor">
+     <label for="gender">Gender:</label>
+     <input type="radio" id="male" name="gender" value="male">
+     <label for="male">male</label>
+     <input type="radio" id="female" name="gender" value="female">
+     <label for="female">female</label>
+     <input type="radio" id="other" name="gender" value="female">
+     <label for="other">Other</label>
+     <label for="app">Time you came to office:</label>
+     <input type="time" id="app" name="app">
+     <label for="week">select a week:</label>
+     <input type="week" id="name" name="name">
+     <label for="subject">Branch:</label>
+<select name="subject" id="subject">
+<optgroup label="Degree">
+<option value="BSC">BSC</option>
+<option value="MECS">MECS</option>
+</optgroup>
+<optgroup label="B.Tech">
+<option value="IT">IT</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+</optgroup>
+</select>
+
+     <label for="exp">Work Experience:</label>
+     <input type="number" name="exp" min="0" max="20">
+     <label for="gsearch">Search Google:</label>
+<input type="search" id="gsearch" name="gsearch">
+<label for="homepage">Add your homepage:</label>
+<input type="url" id="homepage" name="homepage">
+<label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile">
+<label for="homepage">Add your homepage:</label>
+<input type="url" id="homepage" name="homepage"><br>
+<label for="about">About:</label>
+<input type="textarea" name="about">
+<label for="vol">Rating for my company:</label>
+<input type="range" id="vol" name="vol" min="1" max="20">
+<input type="submit" value="submit">
+    </fieldset>
+</form>
+</body>
+</html>
